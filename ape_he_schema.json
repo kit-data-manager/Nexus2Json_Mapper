@@ -1,0 +1,262 @@
+{
+    "entry": {
+        "title": "",
+        "entry_identifier": "",
+        "technique": "",
+        "start_time": "",
+        "end_time": "",
+        "duration": {
+            "value": -9999
+        },
+        "number_of_scans": -9999,
+        "user": {
+            "name": "",
+            "affiliation": "",
+            "email": "",
+            "address": "",
+            "orcid": ""
+        },
+        "sample": {
+            "name": "",
+            "chemical_formula": "",
+            "start_temperature": {
+                "value": -9999,
+                "unit": "K"
+            },
+            "end_temperature": {
+                "value": -9999,
+                "unit": "K"
+            },
+            "voltage_bias": {
+                "value": -9999,
+                "unit": "V"
+            },
+            "magnetic_field": {
+                "value": -9999,
+                "unit": "A"
+            },
+            "remanent_magnetic_field": {
+                "value": -9999,
+                "unit": "A"
+            },
+            "gas_flux": [
+                {
+                    "value": -9999,
+                    "unit": "ml/min",
+                    "gas_name": ""
+                },
+                {
+                    "value": -9999,
+                    "unit": "ml/min",
+                    "gas_name": "Other",
+                    "gas_formula": ""
+                }
+            ],
+            "pressure": {
+                "value": -9999,
+                "unit": "mbar"
+            },
+            "transformations": {
+                "x": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "mm"
+                },
+                "y": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "mm"
+                },
+                "z": {
+                    "value": -9999,
+                    "unit": "mm"
+                },
+                "theta": {
+                    "value": -9999,
+                    "unit": "degrees"
+                },
+                "phi": {
+                    "value": -9999,
+                    "unit": "degrees"
+                }
+            },
+            "situation": ""
+        },
+        "instrument": {
+            "source": {
+                "energy": {
+                    "value": -9999,
+                    "unit": "GeV"
+                },
+                "current": {
+                    "value": -9999,
+                    "unit": "mA"
+                },
+                "type": "Synchrotron X-ray source",
+                "name": "Elettra-Sincrotrone Trieste",
+                "probe": "X-ray"
+            },
+            "monochromator": {
+                "energy": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "eV"
+                },
+                "integration_time": {
+                    "value": -9999,
+                    "unit": "ms"
+                },
+                "grating": {
+                    "mirror": "",
+                    "period": {
+                        "value": -9999,
+                        "unit": "lines/mm"
+                    }
+                }
+            },
+            "incoming_beam_electrometer": {
+                "NPLC": -9999,
+                "electrometer_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_positive_magnetic_field": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_negative_magnetic_field": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "Keithley 6517b Electrometer"
+            },
+            "sample_current_electrometer": {
+                "NPLC": -9999,
+                "electrometer_voltage_range": {
+                    "value": -9999,
+                    "unit": "V"
+                },
+                "voltage_bias": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "V"
+                },
+                "electrometer_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_positive_magnetic_field": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_negative_magnetic_field": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "Keithley 6517b Electrometer"
+            },
+            "reference_current_electrometer": {
+                "NPLC": -9999,
+                "electrometer_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_positive_magnetic_field": {
+                    "max_value": -9999,
+                    "min_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "data_negative_magnetic_field": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "Keithley 6517b Electrometer"
+            },
+            "incoming_beam_picoammeter": {
+                "picoammeter_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "integration_time": {
+                    "value": -9999,
+                    "unit": "ms"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "AH501B Picoammeter"
+            },
+            "sample_current_picoammeter": {
+                "picoammeter_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "integration_time": {
+                    "value": -9999,
+                    "unit": "ms"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "AH501B Picoammeter"
+            },
+            "reference_current_picoammeter": {
+                "picoammeter_current_range": {
+                    "value": -9999,
+                    "unit": "A"
+                },
+                "integration_time": {
+                    "value": -9999,
+                    "unit": "ms"
+                },
+                "data": {
+                    "min_value": -9999,
+                    "max_value": -9999,
+                    "average_value": -9999,
+                    "unit": "A"
+                },
+                "description": "AH501B Picoammeter"
+            }
+        },
+        "definition": "NXxas"
+    }
+}

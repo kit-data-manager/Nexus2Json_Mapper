@@ -180,8 +180,8 @@ def main():
 
     try:
         # Validate files
-        validate_file_path(args.ape_he_schema, '.json')
-        validate_file_path(args.nexus_file, '.nxs')
+        #validate_file_path(args.ape_he_schema, '.json')
+        #validate_file_path(args.nexus_file, '.nxs')
 
         # Load the schema
         with open(args.ape_he_schema, 'r') as f:

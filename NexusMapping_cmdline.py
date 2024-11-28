@@ -1,6 +1,5 @@
 import os
 import h5py
-import hyperspy.api as hs
 import pandas as pd
 import numpy as np
 import json
@@ -127,9 +126,9 @@ def create_ape_he_document(myDict, mappingDict):
                             logging.warning(f"Unsupported type for 'value' key in {key_path}: {type(a_ref[last_key])}")
                     elif isinstance(b_ref[last_key], dict) and 'min_value' in b_ref[last_key] and a_ref[last_key].size > 0:
                         try:
-                            b_ref[last_key]['min_value'] = np.min(a_ref[last_key])
-                            b_ref[last_key]['max_value'] = np.max(a_ref[last_key])
-                            b_ref[last_key]['average_value'] = (np.min(a_ref[last_key]) + np.max(a_ref[last_key])) / 2.
+                            b_ref[last_key]['min_value'] = np.nanmin(a_ref[last_key])
+                            b_ref[last_key]['max_value'] = np.nanmax(a_ref[last_key])
+                            b_ref[last_key]['average_value'] = (np.nanmin(a_ref[last_key]) + np.nanmax(a_ref[last_key])) / 2.
                         except Exception as e:
                             logging.warning(f"Error computing min or max for {key_path}: {e}")
                     elif last_key == 'gas_flux':
@@ -180,8 +179,8 @@ def main():
 
     try:
         # Validate files
-        #validate_file_path(args.ape_he_schema, '.json')
-        #validate_file_path(args.nexus_file, '.nxs')
+        validate_file_path(args.ape_he_schema, '.json')
+        validate_file_path(args.nexus_file, '.nxs')
 
         # Load the schema
         with open(args.ape_he_schema, 'r') as f:

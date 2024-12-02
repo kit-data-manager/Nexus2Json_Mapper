@@ -20,5 +20,5 @@ A structured JSON file containing the extracted metadata aligned with the schema
 
 **How to execute the script:**
 
-`python script_name.py <path_to_schema.json> <path_to_nexus_file.nxs> <output_document.json>`
+`python NexusMapping_cmdline.py <path_to_schema.json> <path_to_NeXus_file.nxs> <output_document.json>`
 

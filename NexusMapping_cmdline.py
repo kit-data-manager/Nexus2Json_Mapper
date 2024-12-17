@@ -15,7 +15,7 @@ def main():
     )
     parser.add_argument("ape_he_schema", type=str, help="Path to the JSON schema file.")
     parser.add_argument("nexus_file", type=str, help="Path to the NeXus (.nxs) file.")
-    parser.add_argument("document_name", type=str, help="Name of the output JSON file.")
+    parser.add_argument("document_name", type=str, help="Name of the output JSON file or the zip file.")
     args = parser.parse_args()
 
     try:
@@ -32,7 +32,7 @@ def main():
         all_metadata, file_type = nxs.get_file_contain()
 
         # Process the metadata, create the document and save
-        if file_type == "-nxs":
+        if file_type == "_nxs":
             mapper = APE_HE_Mapper(ape_he_schema, all_metadata)
             myDoku = mapper.output_the_document()
             JsonOutputter.save_the_file(myDoku, args.document_name)

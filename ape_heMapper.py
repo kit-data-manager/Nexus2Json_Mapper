@@ -1,4 +1,5 @@
 import json
+import logging
 from metadataProcessor import MetadataProcessor
 from neXusReader import NeXusReader
 
@@ -8,8 +9,12 @@ class APE_HE_Mapper:
         self.metadata_dict = metadata_dict
 
         self.keys_path_schema = MetadataProcessor.extract_keys_from_myDict(self.mySchema)
-        self.metadata = {tuple(key.split('/')): value for key, value in self.metadata_dict.items()}
-
+    
+        try:
+            self.metadata = {tuple(key.split('/')): value for key, value in self.metadata_dict.items()}
+        except Exception as e:
+            logging.error(f"Unexpected error while transforming to tuple the metadata keys path: {e}")
+        
         self.equivalencies = {
             ('entry', 'sample', 'transformations', 'phi(x)'): ('entry', 'sample', 'transformations', 'phi'),
             ('entry', 'sample', 'transformations', 'theta(z)'): ('entry', 'sample', 'transformations', 'theta')

@@ -129,7 +129,8 @@ class MetadataProcessor:
             except KeyError as e:
                 logging.warning(f"KeyError while processing {key_path}: {e}")
             except Exception as e:
-                logging.error(f"Unexpected error while processing {key_path}: {e}")
+                #logging.error(f"Unexpected error while processing {key_path}: {e}")
+                logging.info(f"Unexpected error while processing {key_path}: {e}")
 
         return mySchema_dict
         

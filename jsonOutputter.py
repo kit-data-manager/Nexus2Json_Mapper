@@ -12,7 +12,8 @@ class JsonOutputter:
                 json.dump(mapped_metadata, json_file, indent=4)
             logging.info(f"{file_path} has been created successfully!")
         except Exception as e:
-            logging.error(f"Failed to save {file_path}: {e}")
+            #logging.error(f"Failed to save {file_path}: {e}")
+            logging.info(f"Failed to save {file_path}: {e}")
 
     @staticmethod
     def save_to_zip(file_path_list, zip_file_path):
@@ -28,5 +29,6 @@ class JsonOutputter:
                 os.remove(file_path)
                 logging.info(f"{file_path} has been deleted.")
         except Exception as e:
-            logging.error(f"Failed to save to zip or delete files: {e}")
+            #logging.error(f"Failed to save to zip or delete files: {e}")
+            logging.info(f"Failed to save to zip or delete files: {e}")
 

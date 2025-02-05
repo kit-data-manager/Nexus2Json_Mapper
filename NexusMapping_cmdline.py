@@ -50,6 +50,8 @@ def main():
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")
+        with open(args.document_name, 'w') as f:
+            json.dump({"ErrorMessage": e}, f, indent=4)
 
 if __name__ == "__main__":
     main()

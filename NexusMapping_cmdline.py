@@ -37,7 +37,7 @@ def main():
             if isinstance(all_metadata, str):
                 with open(args.document_name, 'w') as f:
                     json.dump(all_metadata, f, indent=4)
-                sys.exit(1)
+                #sys.exit(1)
             else:
                 mapper = APE_HE_Mapper(ape_he_schema, all_metadata)
                 myDoku = mapper.output_the_document()

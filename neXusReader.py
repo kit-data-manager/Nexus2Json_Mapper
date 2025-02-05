@@ -44,6 +44,7 @@ class NeXusReader:
         except Exception as e:
             #raise ValueError(f"Error reading Nexus file: {e}")
             logging.info(f"Error reading Nexus file: {e}")
+            return f"Error reading Nexus file: {e}"
         return self.all_metadata
 
     def _process_zip_file(self):

@@ -5,6 +5,7 @@ import logging
 from neXusReader import NeXusReader
 from ape_heMapper import APE_HE_Mapper
 from jsonOutputter import JsonOutputter
+import sys
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -33,9 +34,14 @@ def main():
 
         # Process the metadata, create the document and save
         if file_type == "_nxs":
-            mapper = APE_HE_Mapper(ape_he_schema, all_metadata)
-            myDoku = mapper.output_the_document()
-            JsonOutputter.save_the_file(myDoku, args.document_name)
+            if isinstance(all_metadata, str):
+                with open(args.document_name, 'w') as f:
+                    json.dump(all_metadata, f, indent=4)
+                sys.exit(1)
+            else:
+                mapper = APE_HE_Mapper(ape_he_schema, all_metadata)
+                myDoku = mapper.output_the_document()
+                JsonOutputter.save_the_file(myDoku, args.document_name)
         else:
             nxs_file_names = list(all_metadata.keys())
             file_path_list =  []

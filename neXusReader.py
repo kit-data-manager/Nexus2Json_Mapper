@@ -28,7 +28,8 @@ class NeXusReader:
             try:
                 shutil.rmtree(self.temp_folder)
             except Exception as e:
-                logging.error(f"Error deleting temporary folder: {e}")
+                #logging.error(f"Error deleting temporary folder: {e}")
+                logging.info(f"Error deleting temporary folder: {e}")
                 
             return self.all_metadata_zip, "_zip"
             
@@ -41,7 +42,8 @@ class NeXusReader:
             with h5py.File(self.file_path, 'r') as f:
                 self.all_metadata = self.extract_metadata(f)
         except Exception as e:
-            raise ValueError(f"Error reading Nexus file: {e}")
+            #raise ValueError(f"Error reading Nexus file: {e}")
+            logging.info(f"Error reading Nexus file: {e}")
         return self.all_metadata
 
     def _process_zip_file(self):
@@ -51,7 +53,8 @@ class NeXusReader:
             with zipfile.ZipFile(self.file_path, 'r') as zip_ref:
                 zip_ref.extractall(self.temp_folder)
         except FileNotFoundError:
-            logging.error("Error: Zip file not found.")
+            #logging.error("Error: Zip file not found.")
+            logging.info("Error: Zip file not found.")
         except Exception as e:
             logging.warning(f"Error processing the zip file: {e}")
             

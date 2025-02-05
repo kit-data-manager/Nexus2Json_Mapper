@@ -49,7 +49,7 @@ def main():
             JsonOutputter.save_to_zip(file_path_list, args.document_name)
 
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        #logging.error(f"An error occurred: {e}")
         with open(args.document_name, 'w') as f:
             json.dump({"ErrorMessage": e}, f, indent=4)
 

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+type: software
+title: APE-HE mapper
+abstract: APE-HE Mapper extracts metadata from APE-HE (Advanced Photoelectric Effect
+  – High Energy) experimental neXus output into a consistent JSON format that follows
+  a schema.
+version: v0.1.1
+keywords:
+  - APE-HE
+  - neXus
+  - metadata
+authors:
+  - given-names: Gabin Thibaut
+    orcid: https://orcid.org/0000-0002-6745-3464
+    family-names: Oumbe Tekam
+  - given-names: Irene
+    orcid: https://orcid.org/0000-0002-9576-8615
+    family-names: Modolo
+  - given-names: Dario
+    orcid: https://orcid.org/0000-0001-9199-6373
+    family-names: De Angelis
+  - given-names: Rossella
+    orcid: https://orcid.org/0000-0003-2534-0063
+    family-names: Aversa
+contact:
+  - given-names: Gabin Thibaut
+    orcid: https://orcid.org/0000-0002-6745-3464
+    family-names: Oumbe Tekam
+license: Apache-2.0
+repository-code: https://github.com/kit-data-manager/Nexus2Json_Mapper

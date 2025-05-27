@@ -1,0 +1,37 @@
+[project]
+name = "APE-HE mapper"
+version = "v0.1.1"
+description = "APE-HE Mapper extracts metadata from APE-HE (Advanced Photoelectric Effect – High Energy) experimental neXus output into a consistent JSON format that follows a schema."
+
+keywords = ["APE-HE", "neXus", "metadata"]
+license = "Apache-2.0"
+repository = "https://github.com/kit-data-manager/Nexus2Json_Mapper"
+
+# This is you, the proud author of your project:
+[[project.people]]
+given-names = "Gabin Thibaut"
+family-names = "Oumbe Tekam"
+orcid = "https://orcid.org/0000-0002-6745-3464"
+author = true      # is a full author of the project (i.e. appears in citations)
+maintainer = true  # currently maintains the project (i.e. is a contact person)
+
+[[project.people]]
+given-names = "Irene"
+family-names = "Modolo"
+orcid = "https://orcid.org/0000-0002-9576-8615"
+publication_author = true
+
+[[project.people]]
+given-names = "Dario"
+family-names = "De Angelis"
+orcid = "https://orcid.org/0000-0001-9199-6373"
+publication_author = true
+
+[[project.people]]
+given-names = "Rossella"
+family-names = "Aversa"
+orcid = "https://orcid.org/0000-0003-2534-0063"
+publication_author = true
+
+[config]
+verbose = true     # show detailed information about what somesy is doing

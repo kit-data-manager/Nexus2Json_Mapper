@@ -1,0 +1,63 @@
+{
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "https://w3id.org/software-iodata",
+    "https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/ontology.jsonld",
+    "https://schema.org",
+    "https://w3id.org/software-types"
+  ],
+  "@type": "SoftwareSourceCode",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Gabin Thibaut",
+      "familyName": "Oumbe Tekam",
+      "@id": "https://orcid.org/0000-0002-6745-3464",
+      "identifier": "https://orcid.org/0000-0002-6745-3464"
+    }
+  ],
+  "name": "APE-HE mapper",
+  "description": "APE-HE Mapper extracts metadata from APE-HE (Advanced Photoelectric Effect – High Energy) experimental neXus output into a consistent JSON format that follows a schema.",
+  "version": "v0.1.1",
+  "keywords": [
+    "APE-HE",
+    "neXus",
+    "metadata"
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Gabin Thibaut",
+      "familyName": "Oumbe Tekam",
+      "@id": "https://orcid.org/0000-0002-6745-3464",
+      "identifier": "https://orcid.org/0000-0002-6745-3464"
+    }
+  ],
+  "license": [
+    "https://spdx.org/licenses/Apache-2.0"
+  ],
+  "codeRepository": "https://github.com/kit-data-manager/Nexus2Json_Mapper",
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Irene",
+      "familyName": "Modolo",
+      "@id": "https://orcid.org/0000-0002-9576-8615",
+      "identifier": "https://orcid.org/0000-0002-9576-8615"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Dario",
+      "familyName": "De Angelis",
+      "@id": "https://orcid.org/0000-0001-9199-6373",
+      "identifier": "https://orcid.org/0000-0001-9199-6373"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rossella",
+      "familyName": "Aversa",
+      "@id": "https://orcid.org/0000-0003-2534-0063",
+      "identifier": "https://orcid.org/0000-0003-2534-0063"
+    }
+  ]
+}

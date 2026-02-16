@@ -1,3 +1,6 @@
+**Repository archived, replaced by [ape_he_mapper](https://github.com/kit-data-manager/ape_he_mapper)**
+===
+
 **APE-HE NeXus File to JSON Document Converter**
 
 **Description:**
